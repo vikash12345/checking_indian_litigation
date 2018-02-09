@@ -6,7 +6,7 @@ for ($mainpage = 0; $mainpage < sizeof($years); $mainpage++)
 {
 	 
 	$linkabc		=	'http://supremecourtofindia.nic.in/php/case_status/case_status_process.php?d_no=1&d_yr='.$years[$mainpage];
-	echo $htmlcheck	=	file_get_contents($linkabc);
+	$htmlcheck		=	file_get_contents($linkabc);
 	$checking		=	$htmlcheck->find("h5[plaintext^=Diary No]",0);
 	$not			=	$htmlcheck->find("h5[plaintext^=Case Not Found]",0);
 	$loop			=	1;
