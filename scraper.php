@@ -11,7 +11,7 @@ for ($mainpage = 0; $mainpage < sizeof($years); $mainpage++)
 	$not			=	$htmlcheck->find("h5[plaintext^=Case Not Found]",0);
 	$loop			=	1;
 	
-	while($checking	==	'Diary No.- '.1. '-' .$years[$mainpage]) 
+	while($checking	==	'Diary No.- '.$loop. '-' .$years[$mainpage]) 
 	{
   		$link	=	'http://supremecourtofindia.nic.in/php/case_status/case_status_process.php?d_no='.$loop.'&d_yr='.$years[$mainpage];
 		$html	=	file_get_contents($link);
